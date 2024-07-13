@@ -19,4 +19,4 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
     - name: Sync resources contents to server
-      run: rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./resources/ michaelcollins@109.228.52.77:/home/michaelcollins/gaming-servers/MOJRP2/
+      run: rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./resources/ michaelcollins@109.228.52.77:/home/michaelcollins/gaming-servers/MOJRP2/resources/
